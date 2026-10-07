@@ -1,0 +1,48 @@
+<evaluation>
+  <!-- mcp-builder Phase 4 evaluation set for node-fable-mcp.
+       All ten are independent, read-only, stable, and verifiable by string
+       comparison; none requires a live cswap/claude launch (validation and
+       surface questions resolve before any subprocess would spawn).
+       Hand-verified 2026-09-07 by evals/verify_eval.py, which asserts every
+       answer against the running code/server. -->
+  <qa_pair>
+    <question>How many tools does the node-fable-mcp server expose over MCP tools/list?</question>
+    <answer>2</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>What is the title annotation of the fable_consult tool?</question>
+    <answer>Fable Consult</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>What is the readOnlyHint annotation value on fable_headroom?</question>
+    <answer>true</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>What error_class does fable_consult return when called with model="claude-fable-5-0"?</question>
+    <answer>invalid_model</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Which model ids does fable_consult accept for its model parameter, in ladder order?</question>
+    <answer>claude-fable-5-1, claude-opus-5, claude-opus-4-8</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>What error_class comes back when a resume is attempted with a session_id the call-state store has no row for?</question>
+    <answer>unknown_session</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>What error_class does fable_consult return when the brief is an empty string?</question>
+    <answer>invalid_brief</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>There is no elaborate or orchestrate role — which single role covers both, with granularity set by a parameter?</question>
+    <answer>plan</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>What is the default effort level for the implement role?</question>
+    <answer>medium</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>What error_class is returned when a material path resolves under ~/.claude?</question>
+    <answer>forbidden_path</answer>
+  </qa_pair>
+</evaluation>

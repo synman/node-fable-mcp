@@ -1,0 +1,2 @@
+# Carries the MCP SDK version bound only; not a full dependency list.
+mcp<2
